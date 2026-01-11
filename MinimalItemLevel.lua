@@ -27,7 +27,7 @@ f:SetScript("OnEvent", function(self, event, addon)
             local fs = button.ilvlText
             if not fs then
                 fs = button:CreateFontString(nil, "OVERLAY")
-                fs:SetPoint("TOPRIGHT", button, "TOPRIGHT", -2, -2)
+                fs:SetPoint("BOTTOMRIGHT", button, "BOTTOMRIGHT", 1, 2)
                 fs:SetJustifyH("RIGHT")
                 -- FONTE CUSTOM: Expressway.ttf
                 fs:SetFont("Interface\\AddOns\\MinimalItemLevel\\Fonts\\Expressway.ttf", 12, "OUTLINE")
@@ -53,3 +53,4 @@ f:SetScript("OnEvent", function(self, event, addon)
     end
 
 end)
+
