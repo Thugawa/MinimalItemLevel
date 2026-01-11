@@ -1,0 +1,8 @@
+## Interface: 11508
+## Title: Minimal Item Level
+## Notes: Item Level no Character Frame
+## Author: Thuga
+## Version: 1.0
+## Dependencies: 
+
+MinimalItemLevel.lua
