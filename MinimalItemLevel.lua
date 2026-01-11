@@ -4,7 +4,6 @@ f:SetScript("OnEvent", function(self, event, addon)
     if addon == "MinimalItemLevel" then
         local function UpdateSlot(button)
             local slotID = button:GetID()
-            -- Exclui Shirt (4) e Tabard (19)
             if not slotID or slotID < INVSLOT_FIRST_EQUIPPED or slotID > INVSLOT_LAST_EQUIPPED or slotID == 4 or slotID == 19 then
                 if button.ilvlText then button.ilvlText:Hide() end
                 return
@@ -52,4 +51,5 @@ f:SetScript("OnEvent", function(self, event, addon)
             end
         end)
     end
+
 end)
